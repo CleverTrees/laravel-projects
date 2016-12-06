@@ -1,0 +1,366 @@
+body{
+font-family: 'Open Sans' sans-serif;
+overflow-x: hidden;
+}
+
+/*Banner CSS*/
+/*main-menu class controls the background color and height of the banner*/
+.main-menu{
+background: -webkit-linear-gradient(#011324, #284E72); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#011324, #284E72); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#011324, #284E72); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#011324 , #284E72); /* Standard syntax */
+height: 120px;
+}
+
+.banner-container{
+/*border:solid 1px;
+border-color: red;*/
+width: 100%;
+margin-top: -15px;
+}
+
+.banner-img{
+/*border:solid 1px;
+border-color: red;*/
+margin-top: 40px;
+margin-bottom:-45px;
+padding-top: 5px;
+margin-left: 15px;
+max-width: 250px;
+}
+
+.navNew{
+/*border:solid 1px;
+border-color: red;*/
+list-style: none;
+font-size: 1.2em;
+font-weight: normal;
+}
+
+.navNew > li > a:hover,
+.navNew > li > a:focus {
+text-decoration: none;
+background-color: none;	
+color: white;
+}
+
+.navNew > li {
+ position: relative;
+ display: block;
+  
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+color: #ED1C24;
+background: transparent;
+}
+/*adjust rule below to move the navigation links*/
+.navNew > li > a {
+position: relative;
+display: block;
+margin-top: -17px;
+padding: 5px 10px;
+color: grey;
+}
+
+/*.nav-pills and ul.nav.pills govern navigation link position in the header*/
+.nav-pills  {
+float: right;
+color:#fff;
+}
+
+ul.nav-pills  {
+margin-top:.5em;
+padding:2px;
+}
+
+.nav-pills > li + li {
+margin-left: 2px;
+}
+
+/*End of Banner CSS*/
+
+/*Main Content CSS*/
+
+.content-container{
+/*The class content container ensures that the footer stays at the bottom*/
+min-height: calc(100vh - 275px);
+/* 120px header + 120px footer = 240px  I added another 45px to remove scroll on 24"screen*/
+}
+
+/*Icon CSS*/
+.fa {
+color: #464f52  
+}
+
+.fa-banner{
+color: grey;
+}
+.fa-7x {
+font-size: 7em;
+}
+.fa-6x {
+font-size: 6em;	
+}
+.fa-5x {
+font-size: 5em;	
+}
+.fa-double {
+font-size: 1.3em;
+}
+.fa-triple{
+font-size: 550%;
+}
+.fa-signout {
+font-size: 1.5em;
+    
+}
+
+.signout-btn{
+    margin-top: -27px;
+    
+}
+
+/*Bread Crumb CSS*/
+.breadcrumb {
+background-color: white;
+margin-right: 0px;
+max-width: 50em;
+margin-top: 1em;
+}
+
+#breadcrumbColor{
+color: #ED1C24;
+}
+
+.glyphicon.glyphicon-circle-arrow-right{
+color: #ED1C24 ;
+}
+
+/*End of Breadcrumb CSS*/
+
+/*Connections Button*/
+.btn-primary {
+color: #ffffff;
+background-color: #284E72;
+margin-top: 1em;
+margin-left: .15em;
+margin-right: -1em;
+border-radius: .3em;
+/*width: 12em;*/
+}
+
+/*The CSS below removes the outline of btn when clicked..
+I had to do this because the tooltip was inheriring the outline from the button*/
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+/*JQuery Tooltip CSS*/
+
+.tooltip {
+background-color:#000;
+border:1px solid #fff;
+padding:10px 15px;
+width:200px;
+display:none;
+color:#fff;
+text-align:left;
+font-size:12px;
+
+/* outline radius for mozilla/firefox only */
+-moz-box-shadow:0 0 10px #000;
+-webkit-box-shadow:0 0 10px #000;
+}
+
+/*Table CSS*/
+.table {
+margin-top: 4em;
+    max-height: 100px;
+}
+
+tr {
+   line-height: 10px;
+   min-height: 10px;
+   height: 10px;
+}
+
+/*Modal CSS*/
+
+.btn-modal {
+margin-top: -.001em;
+margin-right: .15em;
+}
+
+
+/*Footer CSS*/
+
+.footer-container{
+width: 90%;
+margin: auto;
+margin-bottom: 2.2em;
+-webkit-animation-delay: .8s;
+-moz-animation-delay: .8s;
+}
+section#footer{
+height: 120px;
+background: -webkit-linear-gradient(#284E72,#011324); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#284E72,#011324); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#284E72,#011324); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#284E72,#011324); /* Standard syntax */
+margin-top: 50px;
+padding:20px;
+}
+
+section#footer .copyright {
+text-align: center;
+}
+
+/* footer social icons */
+ul.social-network {
+list-style: none;
+display: inline;
+margin-left:0 !important;
+padding: 0;
+}
+ul.social-network li {
+display: inline;
+margin: 0 5px;
+}
+
+ul.footer-menu {
+list-style: none;
+display: inline;
+margin-left:0 !important;
+padding: 0;
+}
+ul.footer-menu li {
+display: inline;
+margin: 0 5px;
+}
+
+.footerP {
+color:#656565;
+font-family:'Open Sans', Arial, sans-serif;
+font-weight:300;
+}
+
+.align-center {
+/*text-align: center;*/	
+/*margin-top:10px;	*/
+/*padding-right: 50px;*/
+
+}
+
+/*Below is CSS needed to make the footer stick to gthe bottom of the page I used it when testing Quantum UI*/
+/*
+#footer {
+width:100%;
+position: absolute;
+bottom:0;
+}
+*/
+
+/*Home CSS*/
+
+.arcImageHome {
+margin-top:8%;
+margin-bottom: 8%;
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+overflow:hidden;
+-webkit-animation-delay: .2s;
+-moz-animation-delay: .2s;
+-webkit-animation-duration: 55s;
+-moz-animation-duration: 55s;
+}
+
+.icon-container{
+	margin: auto;
+ /* border: solid 1px;
+  border-color: black*/
+}
+
+.icon-color{
+  color: #1a154c;
+}
+.text-bold{
+	color:#ED1C24;
+}
+
+.help-icon-home{
+float: right;
+margin-top: 1em;
+margin-right: 1.5em;
+font-size: 20px;
+-webkit-animation-delay: .8s;
+-moz-animation-delay: .8s;
+/*-webkit-animation-duration: 55s;
+-moz-animation-duration: 55s;*/
+}
+
+.row {
+  /*padding-right: 10%;*/
+	/*border: solid 1px;
+  border-color: black;
+  margin: auto;*/
+ /* height: 200px;*/
+}
+
+.icon-wrap{
+  border: solid 1px;
+  border-color: black;
+  margin: auto;
+   height: 200px;
+
+}
+
+#plug{
+padding-right: 5%;
+margin: auto;
+-webkit-animation-delay: .2s;
+-moz-animation-delay: .2s;
+-webkit-animation-duration: 2s;
+-moz-animation-duration: 2s;
+margin-bottom: 8%
+}
+.plug-link{
+padding-left: 45px;
+
+}
+
+#unlock{
+padding-right: 11%;
+-webkit-animation-delay: .4s;
+-moz-animation-delay: .4s;
+-webkit-animation-duration: 2s;
+-moz-animation-duration: 2s;
+}
+.unlock-link{
+padding-left: 37px;
+}
+
+#openid{
+  padding-left: 15%;
+-webkit-animation-delay: .6s;
+-moz-animation-delay: .6s;
+-webkit-animation-duration: 2s;
+-moz-animation-duration: 2s;
+}
+.openid-link{
+
+}
+
+#file-text{
+padding-left: 5%;
+-webkit-animation-delay: .8s;
+-moz-animation-delay: .8s;
+-webkit-animation-duration: 2s;
+-moz-animation-duration: 2s;
+}
+.file-text-link{
+padding-left: 10px;
+}

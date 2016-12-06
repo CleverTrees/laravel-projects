@@ -1,0 +1,139 @@
+*{font-family:'Arial';
+    color:#fff}
+
+html,body{
+height:100%
+}
+
+html body,body body{
+min-height:100%;
+overflow:hidden;
+background: -webkit-linear-gradient(#011324, #284E72); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#011324, #284E72); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#011324, #284E72); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#011324 , #284E72);
+/*   the first item below is the original color*/
+/*background:#0096ff;*/
+font-size:14px}
+
+.arcImageIndex {
+margin-top:10%;
+width: 25%;
+margin-left: auto;
+margin-right: auto;
+overflow:hidden;
+}
+
+#wrap{
+position:absolute;
+display:block;top:50%;left:50%;width:100%;
+text-align:center;
+-webkit-transform:translate(-50%, -50%);
+-ms-transform:translate(-50%, -50%);
+transform:translate(-50%, -50%);
+-webkit-transform-origin:50% 50%;
+-ms-transform-origin:50% 50%;
+transform-origin:50% 50%
+}
+/*Move to custom*/
+#content{ 
+position:relative;
+/*max-width:210px;*/
+max-width:20%;
+margin: auto;
+}
+h2{
+font-weight:50%;
+}
+form{
+margin-top:-30%;
+opacity:0;
+position:absolute;
+overflow:hidden;
+/*The rules below control the animate.css animations for the Form*/
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+
+/*-webkit-transition:all 1s ease-out;
+-moz-transion:all 1s ease-out;
+transition:all 1s ease-out;*/
+}
+form.active{
+opacity:1;
+left:0px
+}
+input{
+	margin-top: 1.5em;
+display:inline-block;
+width:100%;
+margin-bottom:15px;
+border:none;
+padding:5px 3px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;
+box-sizing:border-box
+}
+input[type='text'],form input[type='password'],form input[type='email']{
+background-color:transparent;
+border-bottom:solid 1px #fff;
+color:white
+}
+
+input[type='submit']{
+background-color:#fff;
+/*color:#0096ff;*/
+color:#284E72;
+cursor:pointer;
+/*    the styles below I added*/
+    width: 35%;
+    height: 50%;
+    margin-top: 2em;
+    border-radius: .3em;
+}
+::-webkit-input-placeholder{
+color:#fff;
+opacity:.66;
+text-transform:capitalize
+}
+:-moz-placeholder{
+color:#fff;
+opacity:.66;
+text-transform:capitalize
+}
+::-moz-placeholder{
+color:#fff;
+opacity:.66;
+text-transform:capitalize
+}
+:-ms-input-placeholder{
+color:#fff;
+opacity:.66;
+text-transform:capitalize
+}
+a{
+color:white;
+font-size:12px;
+text-decoration:none
+}
+/*The rules below were entered by me to remove the ouline when the text field is clicked*/
+/*
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+*/
+input:focus,input:active {
+outline: none !important;
+
+}
+a:hover{
+text-decoration:underline
+}
+
+
+
+
+
+
+
+
+
+
+   
